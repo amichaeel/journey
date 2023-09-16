@@ -12,11 +12,6 @@ code {
     monospace;
 }
 
-.container {
-  margin: 6rem auto;
-  max-width: 55rem;
-}
-
 h1 {
   font-weight: 900;
 }
