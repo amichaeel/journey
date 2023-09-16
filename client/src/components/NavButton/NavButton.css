@@ -15,7 +15,7 @@
   color: #ffffff;
   border-radius: 8px;
   padding: 8px 16px;
-  margin-left: 2rem;
+  margin: auto 0;
 
   transition-duration: 250ms;
 }

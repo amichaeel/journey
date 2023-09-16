@@ -1,11 +1,3 @@
-.app-container {
-    margin: 6rem auto;
-}
-.app-body{
-    display: flex;
-    justify-content: center;
-}
-
-.max-width55rem{
-    max-width: 55rem;
+.app-body {
+  margin: 6rem auto;
 }
