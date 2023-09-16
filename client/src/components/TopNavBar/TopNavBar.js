@@ -1,13 +1,14 @@
-import NavButton from '../NavButton/NavButton';
 import './TopNavBar.css'
+import LoginButton from '../NavButton/LoginButton';
+import SignupButton from '../NavButton/SignupButton';
 
 function TopNavBar() {
   return (
     <nav class="navbar navbar-top">
-      <h2>Journey</h2>
+      <h1 class="navtitle">Journey</h1>
       <ul class="navmenu">
-        <NavButton text={'Login'} />
-        <NavButton text={'Sign Up'} />
+        <LoginButton />
+        <SignupButton />
       </ul>
     </nav>
   );
