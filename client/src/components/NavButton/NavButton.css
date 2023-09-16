@@ -1,3 +1,10 @@
 .navbutton{
-  background-color: #FFDFDF
+  font-size: 0.9rem;
+  font-weight: bold;
+  background-color: #FF6F6F;
+  border-color: #FF9F9F;
+  color: #FFFFFF;
+  border-radius: 6px;
+  padding: 8px 16px;
+  margin-left: 2rem;
 }
