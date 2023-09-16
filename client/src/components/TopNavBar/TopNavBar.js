@@ -1,6 +1,6 @@
-import './TopNavBar.css'
-import LoginButton from '../NavButton/LoginButton';
-import SignupButton from '../NavButton/SignupButton';
+import "./TopNavBar.css";
+import LoginButton from "../NavButton/LoginButton";
+import SignupButton from "../NavButton/SignupButton";
 
 function TopNavBar() {
   return (

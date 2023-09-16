@@ -1,10 +1,30 @@
-.navbutton{
-  font-size: 0.9rem;
+:root {
+  --col-shadow: #00000045;
+}
+
+.navbutton {
+  font-size: 1.1rem;
   font-weight: bold;
-  background-color: #FF6F6F;
-  border-color: #FF9F9F;
-  color: #FFFFFF;
-  border-radius: 6px;
+  background: linear-gradient(
+    105deg,
+    rgba(255, 154, 89, 1) 0%,
+    rgba(255, 111, 96, 1) 100%
+  );
+  border: none;
+  box-shadow: none;
+  color: #ffffff;
+  border-radius: 8px;
   padding: 8px 16px;
   margin-left: 2rem;
+
+  transition-duration: 250ms;
+}
+
+.navbutton:hover {
+  background-color: rgb(255, 111, 96);
+  box-shadow: 3px 3px 3px 1px var(--col-shadow);
+}
+
+.navbutton:active {
+  box-shadow: none;
 }
