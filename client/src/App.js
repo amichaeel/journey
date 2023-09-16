@@ -4,7 +4,7 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 
 import { Routes, Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import "./App.css";
-
+ 
 class App extends Component {
   render() {
     return (
