@@ -1,4 +1,4 @@
-import "./NavButton.css";
+import "./AuthButton.css";
 import { useAuth0 } from "@auth0/auth0-react";
 
 function LogoutButton() {
@@ -6,7 +6,7 @@ function LogoutButton() {
 
   return (
     isAuthenticated && (
-      <button className="navbutton" onClick={() => logout()}>
+      <button className="AuthButton" onClick={() => logout()}>
         Logout
       </button>
     )
