@@ -1,8 +1,16 @@
-const express = require('express');
-const path = require('path');
-const app = express();
-const port = process.env.PORT || 5001;
+ // load the environment variables
+//  require("./config/environment")();
 
-app.get('/', (req, res) => res.send("Hello world"));
-
-app.listen(port, () => console.log(`Express app running on port ${port}`));
+ const app = require("./app");
+ const http = require("http");
+ 
+ const PORT = process.env.PORT || 8000;
+ 
+ const createSimpleServer = app => {
+   const server = http.createServer(app);
+   server.listen(PORT, () => {
+     console.log(`Hello World 🌎 I'm Listening on port ${PORT} `);
+   });
+ };
+ 
+ createSimpleServer(app);
