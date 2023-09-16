@@ -1,10 +1,14 @@
+import { useAuth0 } from "@auth0/auth0-react";
+
 
 function Dashboard() {
+    const { isAuthenticated } = useAuth0();
     return (
-        <div>
-            <h1>Previous Journeys</h1>
-            <h1>Create a Journey</h1>
-        </div>
+        isAuthenticated && (
+            <p>User is Authentic</p>
+        ) || (
+            <p>User does not exist</p>
+        )
     );
 }
 
