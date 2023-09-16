@@ -1,12 +1,7 @@
-:root {
-  --side-margins: 5%;
-}
-
 .navbar {
-  align-items: center;
-  background-color: #fff6f6;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  background-color: #fff6f6;
   width: 100%;
   height: 4rem;
   z-index: 1;
@@ -19,18 +14,16 @@
 
 .navtitle {
   font-weight: 750;
-  margin: 0;
-  margin-left: var(--side-margins);
+  /* margin: 0; */
   text-transform: uppercase;
   transform: scaleY(1.4);
 }
 
-.navmenu {
-  padding: 0;
-  margin: 8px;
+.nav-contents {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  margin-right: var(--side-margins);
-  list-style-type: none;
+  justify-content: space-between;
 }
