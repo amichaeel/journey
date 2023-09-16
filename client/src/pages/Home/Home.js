@@ -1,5 +1,5 @@
 import "./Home.css";
-import TopNavBar from "../../components/TopNavBar/TopNavBar";
+import BenefitCard from "../../components/Card/BenefitCard";
 
 function Home() {
   return (
@@ -8,10 +8,15 @@ function Home() {
         <h1>Plan your next trip with a guide ready for everything</h1>
       </div>
       <div>
-        <p>
-          Journey can help with <b>choice paralysis</b> and overall{" "}
+        <h4>
+          Journey can <b>help</b> with <b>choice paralysis</b> and overall{" "}
           <b>discomfort when exploring</b> a new place!
-        </p>
+        </h4>
+      </div>
+      <div className="benefits-cards">
+        <BenefitCard iconName="thunderstorm" text="No weather mishaps" />
+        <BenefitCard iconName="touch_app" text="No choice paralysis" />
+        <BenefitCard iconName="person_pin_circle" text="Discover more" />
       </div>
     </div>
   );

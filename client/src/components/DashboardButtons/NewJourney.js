@@ -6,7 +6,7 @@ function LoginButton() {
 
   return (
     !isAuthenticated && (
-      <button class="navbutton" onClick={() => loginWithRedirect()}>
+      <button class="AuthButton" onClick={() => loginWithRedirect()}>
         Log In
       </button>
     )

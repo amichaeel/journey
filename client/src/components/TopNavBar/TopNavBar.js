@@ -1,7 +1,7 @@
 import "./TopNavBar.css";
-import LoginButton from "../NavButton/LoginButton";
+import LoginButton from "../AuthButton/LoginButton";
 import { useAuth0 } from "@auth0/auth0-react";
-import LogoutButton from "../NavButton/LogoutButton";
+import LogoutButton from "../AuthButton/LogoutButton";
 import Spinner from "../Spinner/Spinner";
 
 function TopNavBar() {
