@@ -1,10 +1,10 @@
 :root {
-  --side-margins: 4rem;
+  --side-margins: 5%;
 }
 
 .navbar {
   align-items: center;
-  background-color: #FFF6F6;
+  background-color: #fff6f6;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -17,10 +17,16 @@
 }
 
 .navtitle {
+  font-weight: 750;
+  margin: 0;
   margin-left: var(--side-margins);
+  text-transform: uppercase;
+  transform: scaleY(1.4);
 }
 
 .navmenu {
+  padding: 0;
+  margin: 8px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
