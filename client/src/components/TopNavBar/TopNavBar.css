@@ -1,0 +1,20 @@
+.navbar {
+  align-items: center;
+  background-color: #FFF6F6;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1rem;
+  width: 100%;
+  z-index: 1;
+}
+.navbar-top {
+  position: fixed;
+  top: 0;
+}
+.navmenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 2rem;
+  list-style-type: none ;
+}
