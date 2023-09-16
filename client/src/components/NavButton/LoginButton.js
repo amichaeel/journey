@@ -1,12 +1,11 @@
 import './NavButton.css'
-import { useAuth0 } from '@auth0/auth0-react';
 
-function LoginButton() {
-  const { loginWithRedirect, isAuthenticated } = useAuth0();
-
+function LoginButton(props) {
+  const { login, isAuthenticated } = props;
+    {console.log("Authenticated login component: ", isAuthenticated)}
   return (
     !isAuthenticated && (
-      <button class="navbutton" onClick={() => loginWithRedirect()}>
+      <button className="navbutton" onClick={login}>
         Log In
       </button>
     )
