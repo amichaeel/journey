@@ -23,6 +23,7 @@
 .navbutton:hover {
   background-color: rgb(255, 111, 96);
   box-shadow: 3px 3px 3px 1px var(--col-shadow);
+  cursor: pointer;
 }
 
 .navbutton:active {
