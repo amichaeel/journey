@@ -4,11 +4,11 @@ const helmet = require("helmet");
 const path = require("path");
 const cors = require("cors")
 
-// const dbConnector = require("./config/db");
+const dbConnector = require("./config/db");
 const routes = require("./routes");
 
 // connect to the database
-// dbConnector();
+dbConnector();
 
 // Base requirements
 const app = express();
