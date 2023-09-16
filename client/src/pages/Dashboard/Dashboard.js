@@ -1,14 +1,20 @@
 import { useAuth0 } from "@auth0/auth0-react";
-
+import { useContext } from "react";
+import DashboardSearch from "../../components/DashboardSearch/DashboardSearch";
+import Spinner from "../../components/Spinner/Spinner"
 
 function Dashboard() {
-    const { isAuthenticated } = useAuth0();
+    const { isAuthenticated, error, isLoading } = useAuth0();
     return (
-        isAuthenticated && (
-            <p>User is Authentic</p>
-        ) || (
-            <p>User does not exist</p>
-        )
+        <div>
+        {error && <p>Authentication Error</p>}
+        {!error && isLoading && <Spinner />}
+        {!error && !isLoading && (
+            <>
+            <DashboardSearch />
+            </>
+        )}
+        </div>
     );
 }
 
