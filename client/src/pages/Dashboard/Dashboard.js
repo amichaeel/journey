@@ -1,7 +1,10 @@
 
 function Dashboard() {
     return (
-        <h1>Dashboard</h1>
+        <div>
+            <h1>Previous Journeys</h1>
+            <h1>Create a Journey</h1>
+        </div>
     );
 }
 
