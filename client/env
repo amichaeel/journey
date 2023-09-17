@@ -1,0 +1,3 @@
+REACT_APP_MONGOURI = mongodb+srv://anthonyjourney:<shellhacks2023>@journeycluster0.zmfgivm.mongodb.net/?retryWrites=true&w=majority
+REACT_APP_AUTH0_DOMAIN = dev-jxbudcqtavwz1zve.us.auth0.com
+REACT_APP_AUTH0_CLIENT_ID = jIkKWicUtq6YZc9pAby9AK7pDDOjFC3H
