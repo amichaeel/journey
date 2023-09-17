@@ -13,7 +13,7 @@ export default class LocationCard extends Component {
     }
 
     async getImg() {
-        const key = 'fsq3Bk83H5oDHtU1NaEgmxy8e6clWHBs4+pYOri8TkeMKCw=';
+        const key = process.env.REACT_APP_FOURSQUARE_KEY;
         const foursquarePlaceImgUrl = `https://api.foursquare.com/v3/places/${this.props.img}/photos`;
         await axios
             .get(foursquarePlaceImgUrl, {
