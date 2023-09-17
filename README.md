@@ -6,7 +6,6 @@ This website is designed to make your travel planning process easier and more en
 - [Features](#features)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
-- [Sample Itinerary](#sample-itinerary)
 - [Contributing](#contributing)
 - [License](#license)
 
