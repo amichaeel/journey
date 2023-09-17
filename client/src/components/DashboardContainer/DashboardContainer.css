@@ -1,0 +1,142 @@
+.new-journey-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align items to the top of the container */
+    align-items: center; /* Center items horizontally */
+}
+.results-container {
+    --_spacer: var(--size-3);
+    display: grid;
+    gap: var(--_spacer);
+    grid-auto-flow: column;
+    grid-auto-columns: 21%;
+  
+    padding: 0 var(--_spacer) var(--_spacer);
+  
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+.results-container > .card {
+    flex: 0 0 auto !; /* Allow the cards to maintain their natural width */
+    margin-right: 10px !; /* Add spacing between cards (adjust as needed) */
+    /* Optionally, you can also specify a fixed width for the cards if needed */
+} 
+
+
+/* Custom iOS-style checkbox */
+.box {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #007AFF; /* iOS blue color for border */
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  /* Checkbox when checked */
+  .box:checked {
+    background-color: #007AFF; /* iOS blue color when checked */
+    border: 2px solid #007AFF; /* iOS blue color for border when checked */
+  }
+  
+  /* Hide the default checkbox input */
+  .box input[type="checkbox"] {
+    display: none;
+  }
+  
+  /* Label for the checkbox */
+  .box-label {
+    font-size: 16px;
+    margin-left: 10px; /* Add spacing between checkbox and label */
+    cursor: pointer;
+  }
+  
+  /* Styling the label when the checkbox is checked */
+  .box:checked + .box-label {
+    color: #007AFF; /* Change label color when checkbox is checked */
+  }
+  
+
+/* Reset default input styles */
+input {
+    appearance: none;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the input when focused */
+input:focus {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style placeholder text */
+input::placeholder {
+    color: #ccc;
+}
+
+/* Style the clear button (X) on iOS */
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    height: 16px;
+    width: 16px;
+    border: none;
+    position: relative;
+    top: 1px;
+    right: 4px;
+    cursor: pointer;
+}
+
+/* Style the search icon (magnifying glass) on iOS */
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/* Style the search input when in a disabled state */
+input:disabled {
+    background-color: #f0f0f0;
+    color: #999;
+    cursor: not-allowed;
+}
+
+/* Reset default button styles */
+button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background-color: #007aff; /* iOS blue color */
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Style the button when hovered */
+button:hover {
+    background-color: #0056b3; /* Slightly darker blue on hover */
+}
+
+/* Style the button when focused */
+button:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the button when disabled */
+button:disabled {
+    background-color: #ccc;
+    color: #999;
+    cursor: not-allowed;
+}

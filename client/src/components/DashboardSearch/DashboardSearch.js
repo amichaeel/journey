@@ -7,19 +7,30 @@ export default class DashboardSearch extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            locations: []
+            locations: [],
+            categories: []
         }
     }
 
     async getLocation() {
         const categories = {
-            // "retail": 17000,
-            "arts and entertainment": 10000,
-            "dining and drinking": 13000,
-            // "event": 14003,
-            // "landmarks and outdoors": 16000,
-            // "recreation": 18000,
+            "shopping": 17000,
+            "arts": 10000,
+            "dining": 13000,
+            "events": 14003,
+            "outdoors": 16000,
+            "recreation": 18000,
         };
+
+        let categoriesFinal = [];
+
+        for (const key in this.props) {
+            if (categories[key] && this.props[key]) {
+                categoriesFinal.push(categories[key])
+            }
+        }
+
+        console.log(categoriesFinal)
 
         const key = process.env.REACT_APP_FOURSQUARE_KEY;
         const apiUrl = "https://api.foursquare.com/v3/places/search";
@@ -30,9 +41,9 @@ export default class DashboardSearch extends Component {
                     Authorization: key,
                 },
                 params: {
-                    categories: Object.values(categories).join(","),
-                    near: "miami",
-                    limit: 5
+                    categories: Object.values(categoriesFinal).join(","),
+                    near: this.props.location,
+                    sort: "DISTANCE"
                 },
             })
             .then((res) => {
@@ -51,7 +62,7 @@ export default class DashboardSearch extends Component {
         return (
             <>
                 <div>{this.state.locations.map(place => (
-                    <LocationCard img={place.fsq_id} name={place.name} address={place.location.formatted_address}/>
+                    <LocationCard className="location-card" img={place.fsq_id} name={place.name} description={place.description} address={place.location.formatted_address}/>
                 ))}</div>
             </>
         );

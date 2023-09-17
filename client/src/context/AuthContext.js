@@ -8,6 +8,7 @@ export const useAuth = () => {
 
 export function AuthProvider({ children }) {
     const { loginWithRedirect, logout, user, isLoading, error, isAuthenticated } = useAuth0();
+    console.log(user)
 
     // Redirect to Auth0 login page
     const login = () => {
