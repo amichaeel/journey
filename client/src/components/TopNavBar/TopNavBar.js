@@ -1,11 +1,10 @@
 import "./TopNavBar.css";
 import LoginButton from "../AuthButton/LoginButton";
-import { useAuth0 } from "@auth0/auth0-react";
 import LogoutButton from "../AuthButton/LogoutButton";
-import Spinner from "../Spinner/Spinner";
-
+import Spinner from "../Spinner/Spinner"
+import {useAuth} from "../../context/AuthContext";
 function TopNavBar() {
-  const { isLoading, error } = useAuth0();
+    const { isLoading, error, isAuthenticated,login, logout, user} = useAuth();
   return (
     <nav className="navbar navbar-top">
       <ul className="nav-contents maxxed-container">
@@ -14,8 +13,9 @@ function TopNavBar() {
         {!error && isLoading && <Spinner />}
         {!error && !isLoading && (
           <>
-            <LoginButton />
-            <LogoutButton />
+              <h1>{(user !== undefined) ? user.name : ""}</h1>
+              <LoginButton isAuthenticated={isAuthenticated} login={login}/>
+              <LogoutButton isAuthenticated={isAuthenticated} logout={logout}/>
           </>
         )}
       </ul>
