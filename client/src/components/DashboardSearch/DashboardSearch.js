@@ -1,7 +1,8 @@
 import axios from "axios";
 // import { useAuth0 } from "@auth0/auth0-react";
 import React, { Component, useState, useEffect } from "react";
-import LocationCard from "../LocationCard/LocationCard";
+import LocationCard from "../LocationCard/OldLocationCard";
+import LocationCardContainer from "../LocationCard/LocationCardContainer";
 
 export default class DashboardSearch extends Component {
     constructor(props) {
@@ -60,11 +61,13 @@ export default class DashboardSearch extends Component {
 
     render() {
         return (
-            <>
-                <div>{this.state.locations.map(place => (
-                    <LocationCard className="location-card" img={place.fsq_id} name={place.name} description={place.description} address={place.location.formatted_address}/>
-                ))}</div>
-            </>
+            <div>
+                <LocationCardContainer locations={this.state.locations} />
+                {/*<div>{this.state.locations.map(place => (*/}
+
+                {/*    <LocationCard className="location-card" img={place.fsq_id} name={place.name} description={place.description} address={place.location.formatted_address}/>*/}
+                {/*))}</div>*/}
+            </div>
         );
     }
 }
