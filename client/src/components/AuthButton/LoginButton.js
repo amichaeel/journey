@@ -1,11 +1,11 @@
-import './NavButton.css'
+import "./AuthButton.css";
 
 function LoginButton(props) {
   const { login, isAuthenticated } = props;
     {console.log("Authenticated login component: ", isAuthenticated)}
   return (
     !isAuthenticated && (
-      <button className="navbutton" onClick={login}>
+      <button className="AuthButton" onClick={login}>
         Log In
       </button>
     )
