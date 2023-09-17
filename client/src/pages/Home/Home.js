@@ -25,7 +25,7 @@ function Home() {
       <div className="benefits-cards">
         <BenefitCard iconName="thunderstorm" text="No weather mishaps" />
         <BenefitCard iconName="touch_app" text="No choice paralysis" />
-        <BenefitCard iconName="person_pin_circle" text="Discover more" />
+        <BenefitCard iconName="person_pin_circle" text="Discover more places" />
       </div>
 
       <footer className="about-us">
