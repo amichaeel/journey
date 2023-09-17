@@ -1,7 +1,7 @@
 .AuthButton {
   font-size: 1.1rem;
   font-weight: bold;
-  background-color: #ff6e6e;
+  background-color: #ae3d64;
   border: none;
   border-radius: 8px;
   padding: 8px 16px;
@@ -11,7 +11,7 @@
 }
 
 .AuthButton:hover {
-  background-color: #ff8e6e;
+  background-color: #622338;
   cursor: pointer;
   transform: scale(1.15);
 }

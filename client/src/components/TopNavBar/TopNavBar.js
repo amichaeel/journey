@@ -8,7 +8,9 @@ function TopNavBar() {
   return (
     <nav className="navbar navbar-top">
       <ul className="nav-contents maxxed-container">
-        <h1 className="navtitle">Journey</h1>
+        <h1 className="navtitle">
+          <span class="material-symbols-outlined">hiking</span> Journey
+        </h1>
         {error && <p>Authentication Error</p>}
         {!error && isLoading && <Spinner />}
         {!error && !isLoading && (
