@@ -1,4 +1,4 @@
-import './NavButton.css'
+import "./AuthButton.css";
 
 function LogoutButton(props) {
   const { logout, isAuthenticated } = props;
@@ -6,7 +6,7 @@ function LogoutButton(props) {
 
   return (
     isAuthenticated && (
-      <button className="navbutton" onClick={logout}>
+      <button className="AuthButton" onClick={logout}>
         Logout
       </button>
     )
