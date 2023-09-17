@@ -34,11 +34,6 @@ The Ultimate Travel Companion is designed to make your travel planning experienc
 - Share your itinerary with travel companions.
 - Get suggestions and recommendations based on your interests.
 
-## Sample Itinerary
-Here's a sneak peek at what your itinerary could look like:
-
-![Sample Itinerary](link-to-sample-itinerary-image.png)
-
 ## Contributing
 We welcome contributions from the community to make The Ultimate Travel Companion even better! If you'd like to contribute:
 
