@@ -8,7 +8,8 @@ export default class LocationCard extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            imgUrl: "client/public/img/journeyairplanewhite.svg",
+            imgUrl: "",
+            details: ""
         };
     }
 
@@ -32,24 +33,40 @@ export default class LocationCard extends Component {
             });
     }
 
+    async getDetails() {
+        const key = process.env.REACT_APP_FOURSQUARE_KEY;
+        const foursquareDetailsUrl = `https://api.foursquare.com/v3/places/${this.props.img}/tips?limit=${1}`
+
+        await axios.get(foursquareDetailsUrl, {
+            headers: {
+                Authorization: key,
+            }
+        })
+        .then((res) => {
+            this.setState({ details: res.data[0]["text"]})
+        })
+        .catch((err) => {
+            console.log(err)
+        })
+    }
+
     componentDidMount() {
         this.getImg();
+        this.getDetails();
     }
 
     render() {
         return (
             <div className="d-flex justify-content-around">
                 {console.log(this)}
-                <Card style={{ width: "18rem" }}>
+                <Card className="location-card" style={{ width: "18rem" }}>
                     <Card.Img src={this.state.imgUrl} variant="top" style={{ objectFit: "cover", height: "200px" }} />
                     <Card.Body>
                         <Card.Title>{this.props.name}</Card.Title>
-                        <Card.Text>Some quick example text to build on the card title and make up the bulk of the card's content.</Card.Text>
+                        <Card.Text>"{this.state.details}"</Card.Text>
                     </Card.Body>
                     <ListGroup className="list-group-flush">
                         <ListGroup.Item>{this.props.address}</ListGroup.Item>
-                        <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-                        <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
                     </ListGroup>
                 </Card>
             </div>
