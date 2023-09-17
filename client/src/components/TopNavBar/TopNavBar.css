@@ -1,28 +1,24 @@
 .navbar {
-  display: flex;
-  justify-content: center;
-  background-color: #fff6f6;
   width: 100%;
-  height: 4rem;
+  height: 2rem;
   z-index: 1;
 }
 
 .navbar-top {
-  position: fixed;
-  top: 0;
+  justify-content: space-between; /* Distribute items to each end horizontally */
+  /* align-items: flex-start; */
 }
 
 .navtitle {
-  font-weight: 750;
-  text-transform: uppercase;
-  transform: scaleY(1.4);
+  background-image: url("../../../public/img/journeyairplanetext.svg");
+  background-size: contain; /* Use 'contain' to fit the SVG within the element */
+  background-repeat: no-repeat;
+  background-position: left center; /* Align the SVG to the left */
+  width: auto; /* Allow the width to adjust based on the SVG's aspect ratio */
+  /* margin-right: 16px; */
 }
 
 .nav-contents {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }

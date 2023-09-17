@@ -21,7 +21,7 @@ export default class DashboardSearch extends Component {
             // "recreation": 18000,
         };
 
-        const key = process.env.REACT_APP_FOURSQUARE_KEY;
+        const key = 'fsq3Bk83H5oDHtU1NaEgmxy8e6clWHBs4+pYOri8TkeMKCw=';
         const apiUrl = "https://api.foursquare.com/v3/places/search";
 
         await axios
