@@ -1,3 +1,32 @@
+:root {
+  --accent-color: #125b5c;
+  --dark-accent-color: #025a3c;
+  --bg-color: #f6f6f6;
+  --brighter-bg-color: #fafafa;
+  --accented-bg-color: #f6fbf9;
+  --shadow-color: #00000015;
+  --primary-text-color: #000;
+  --banner-image-url: url("../public/stock-journey.jpg");
+  /** since svg is maroon, we apply filters to match accent, from `https://codepen.io/sosuke/pen/Pjoqqp` */
+  --logo-filters: invert(26%) sepia(82%) saturate(379%) hue-rotate(132deg)
+    brightness(96%) contrast(98%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-color: #327b7c;
+    --dark-accent-color: #125b5c;
+    --bg-color: #1a1d1f;
+    --brighter-bg-color: #1f2121;
+    --accented-bg-color: #1f2326;
+    --shadow-color: #ededed12;
+    --primary-text-color: #fff;
+    --banner-image-url: url("../public/stock-journey-night.jpg");
+    --logo-filters: invert(41%) sepia(42%) saturate(551%) hue-rotate(132deg)
+      brightness(92%) contrast(86%);
+  }
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -5,7 +34,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #e6e6e6 
+  background-color: var(--bg-color);
 }
 
 code {
