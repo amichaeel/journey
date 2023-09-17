@@ -5,9 +5,10 @@
   border: none;
   border-radius: 8px;
   padding: 8px 16px;
-  margin: auto 0;
   color: white;
+  margin-left: auto; /* Push buttons to the right */
   transition-duration: 250ms;
+  cursor: pointer;
 }
 
 .AuthButton:hover {
