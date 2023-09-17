@@ -54,6 +54,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-Thank you for choosing The Ultimate Travel Companion as your travel planning tool. We hope it enhances your travel experiences. If you have any questions, feedback, or issues, please feel free to [contact us](mailto:your-email@example.com).
+Thank you for choosing The Ultimate Travel Companion as your travel planning tool. We hope it enhances your travel experiences.
 
 Happy travels!
