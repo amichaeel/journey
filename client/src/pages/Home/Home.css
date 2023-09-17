@@ -3,7 +3,7 @@ footer {
 }
 
 .banner {
-  background: url("../../../public/stock-journey.jpg");
+  background: var(--banner-image-url);
   background-position: center;
   background-size: cover;
   border-radius: 8px;

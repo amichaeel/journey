@@ -12,7 +12,7 @@
   background-image: url("../../../public/img/journeyairplanetext.svg");
   background-size: contain; /* Use 'contain' to fit the SVG within the element */
   background-repeat: no-repeat;
-  filter: hue-rotate(180deg);
+  filter: var(--logo-filters);
   margin: 1em;
   height: 2em;
 }

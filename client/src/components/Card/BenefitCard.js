@@ -1,8 +1,8 @@
+import { getMaterialIcon } from "../../helpers";
 import "./Card.css";
 
 function BenefitCard({ iconName, text }) {
-  const iconSpan = <span class="material-symbols-outlined">{iconName}</span>;
-
+  const iconSpan = getMaterialIcon(iconName);
   return (
     <div className="card">
       <h1 className="card-icon">{iconSpan}</h1>

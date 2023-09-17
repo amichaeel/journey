@@ -1,4 +1,5 @@
 .app-body {
   text-align: center;
   margin: 6em auto;
+  color: var(--primary-text-color);
 }
