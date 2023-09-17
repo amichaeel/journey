@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <div className="app-container">
         <TopNavBar />
-        <div className="app-body maxxed-container">
+        <div className="app-body">
           <div>
             <Router>
               <Routes>

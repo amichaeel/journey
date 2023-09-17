@@ -2,8 +2,29 @@ footer {
   text-align: center;
 }
 
-.header-bg {
-  width: auto;
+.banner {
+  background: url("../../../public/stock-journey.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  max-width: 53rem;
+
+  height: 20em;
+  text-shadow: #000 1px 0 10px;
+}
+
+.banner-container {
+  display: flex;
+  justify-content: center;
+}
+
+.banner-text {
+  align-self: flex-end;
+  font-size: 3em;
+  font-weight: 900;
+  padding: 0.5rem;
 }
 
 .benefits-cards {
