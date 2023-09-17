@@ -7,7 +7,5 @@ footer {
 }
 
 .benefits-cards {
-  margin: 2em auto;
   display: flex;
-  justify-content: space-between;
 }
